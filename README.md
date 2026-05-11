@@ -1,45 +1,59 @@
 # paraty_geoproxy
 A  reverse geocoding proxy server developed in TypeScript and Node.js.
 ## Features
-- **Geolocation Proxying**: Intercept and modify geolocation requests to provide custom location data.
-- **Configurable Location Data**: Easily configure the location data that the proxy will return for geolocation requests.
+
+- **Geolocation Proxying**: Intercept and modify geolocation requests to provide
+custom location data, like address, city, country, and more from a latlong pair.
+- **Configurable Location Data**: Easily configure the location data that the
+proxy will return for geolocation requests.
 - **Cross-Platform**: Runs on any platform that supports Node.js.
 - **Lightweight**: Minimal dependencies and efficient performance.
 - **Cache Support**: Optionally cache geolocation responses for improved performance.
-- **Logging**: Detailed logging of geolocation requests and responses for debugging and monitoring purposes.
-- **API Integration**: Integrate with external APIs to fetch real-time location data if needed.
-- **Security**: Implement security measures to protect against unauthorized access and ensure data integrity.
-- **Access the Geolocation Services**: Easily access and utilize the geolocation services provided by the proxy.
-- **Supported Providers**: Main geolocation providers like Google Maps, OpenStreetMap, and Mapbox are supported.
+- **Logging**: Detailed logging of geolocation requests and responses for
+debugging and monitoring purposes.
+- **API Integration**: Integrate with external APIs to fetch real-time location
+data if needed.
+- **Security**: Implement security measures to protect against unauthorized 
+access and ensure data integrity.
+- **Access the Geolocation Services**: Easily access and utilize the geolocation
+services provided by the proxy.
+- **Supported Providers**: Main geolocation providers like Google Maps,
+OpenStreetMap, and Mapbox are supported.
+-- **Reverse Geocoding**: Support for reverse geocoding to convert latitude and
+longitude into human-readable addresses.
 
 ## Installation
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/mpbarbosa/paraty_geoproxy.git
-cd paraty_geoproxy
-```
+    ```bash
+    git clone https://github.com/mpbarbosa/paraty_geoproxy.git
+    cd paraty_geoproxy
+    ```
 
 2. Install dependencies:
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
 3. Build the project:
 
-```bash
-npm run build
-```
+    ```bash
+    npm run build
+    ```
 
 4. Start the proxy server:
 
-```bash
-npm start
-```
+    ```bash
+    npm start
+    ```
+
 ## Configuration
-The proxy server can be configured using a `config.json` file located in the root directory. Here is an example configuration:
+
+The proxy server can be configured using a `config.json` file located in the
+root directory. Here is an example configuration:
+
 ```json
 {
   "port": 8080,
@@ -57,8 +71,10 @@ The proxy server can be configured using a `config.json` file located in the roo
   }
 }
 ```
+
 - `port`: The port on which the proxy server will listen for requests.
-- `locationData`: The custom location data that the proxy will return for geolocation requests.
+- `locationData`: The custom location data that the proxy will return for
+geolocation requests.
 - `cacheEnabled`: Enable or disable caching of geolocation responses.
 - `cacheDuration`: The duration (in seconds) for which cached responses will be stored.
 - `loggingEnabled`: Enable or disable logging of geolocation requests and responses.
