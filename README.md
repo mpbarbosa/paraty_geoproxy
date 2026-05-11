@@ -1,5 +1,5 @@
 # paraty_geoproxy
-A  geolocation proxy server developed in TypeScript and Node.js.
+A  reverse geocoding proxy server developed in TypeScript and Node.js.
 ## Features
 - **Geolocation Proxying**: Intercept and modify geolocation requests to provide custom location data.
 - **Configurable Location Data**: Easily configure the location data that the proxy will return for geolocation requests.
